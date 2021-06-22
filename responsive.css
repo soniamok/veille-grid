@@ -1,13 +1,31 @@
-@media screen and (min-width : 700px) and (max-width: 1200px){
-    .resp{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 1em;
-        row-gap: 1em;
-        grid-template-areas: 
-        "img1 img2 img3"
-        "img4 img5 img6";    margin-right: -9%;
+@media screen and (min-width: 700px) and (max-width: 1200px)
+{
+    main{
+        width:75%;
     }
+} 
+ @media screen and  (max-width: 1570px) and (max-width: 1295px){
+    .resp{
+        margin-right: 55%;
+    } 
     
-}
+} 
 
+@media screen and  (min-width: 1365px) and (max-width: 1100px){
+    .resp{
+     margin-right: -45%; 
+    } 
+    
+} 
+@media screen and  (min-width: 1100px) and (max-width: 700px){
+    .resp{
+     margin-right: 39%; 
+    } 
+    
+} 
+@media screen and (max-width: 400px){
+    .resp{
+     margin-right: 39%; 
+    } 
+    
+} 
