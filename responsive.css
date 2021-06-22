@@ -1,0 +1,13 @@
+@media screen and (min-width : 700px) and (max-width: 1200px){
+    .resp{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+        grid-template-areas: 
+        "img1 img2 img3"
+        "img4 img5 img6";    margin-right: -9%;
+    }
+    
+}
+

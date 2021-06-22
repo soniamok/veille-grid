@@ -1,0 +1,104 @@
+body{
+    margin: 0 ;
+    padding: 0;
+   }
+header{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 2 colonnes avec un tiers - deux tiers 1fr unité utilisée pour rendre les colonnes et lignes flexibles*/
+    grid-template-rows: auto; /* va être défini dans area */
+    column-gap: 24px; /* gouttière*/
+    row-gap: 20px;
+    grid-template-areas: /* on définit les zones de la grille*/
+    "avatar module" /*définir les noms des zones*/
+    ". about";
+}
+
+.avatar{ 
+    grid-area: avatar; /* on attribue à la classe .avatar la zone qui porte le nom avatar */
+    text-align: center;
+}
+.avatar img{
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+}
+.container{
+    grid-area: module;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+    ". logo logo . ."
+    "btn1 btn2 btn3 . ."
+    "about about about . .";
+}
+.logo{
+    grid-area: logo;
+    font-size: 2em;
+    font-family: Pacifico;
+}
+.btn1 {
+    grid-area: btn1;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btn2 {
+    grid-area: btn2;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btn3{
+    grid-area: btn3;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.aboutme{
+    grid-area: about;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main{
+    width: 100%;
+    /* margin: auto; */
+}
+.resp{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+}
+main img {
+    height:300px;
+    width: 300px;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+
+
